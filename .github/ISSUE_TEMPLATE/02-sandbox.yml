@@ -1,0 +1,79 @@
+{
+  "name": "샌드박스 실행 문제 / Sandbox",
+  "description": "워크스페이스 접속, 작업 탭, 로컬 앱 연결 또는 핫리로드가 동작하지 않습니다.",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "공개 이슈입니다. 토큰·쿠키·연결 코드·.env·Core 소스·고객 데이터는 넣지 마세요. / Public issue: remove credentials and private data."
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "mode",
+      "attributes": {
+        "label": "개발 방식 / Development mode",
+        "options": [
+          "수동 로컬 / Manual local",
+          "Docker",
+          "AI 도구 / AI-assisted",
+          "기타 / Other"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "versions",
+      "attributes": {
+        "label": "환경과 버전 / Environment and versions",
+        "description": "영향받은 패키지·CLI·SDK 버전, OS, 브라우저, Docker 버전(해당하는 경우). 인증 파일은 첨부하지 마세요."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "reproduction",
+      "attributes": {
+        "label": "재현 단계 / Steps to reproduce",
+        "description": "실행한 명령, 화면에서 선택한 작업, 최소 재현 앱을 적어 주세요. 비공개 프로젝트 정보는 지워 주세요."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "expected",
+      "attributes": {
+        "label": "기대 결과 / Expected result"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "actual",
+      "attributes": {
+        "label": "실제 결과 / Actual result",
+        "description": "오류 메시지와 발생 시각·시간대. 로그는 관련 부분만 민감정보를 지우고 첨부하세요."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "related",
+      "attributes": {
+        "label": "관련 이슈 / Related issue",
+        "description": "기존에 검색한 동일·유사 문제의 공개 링크가 있으면 적어 주세요."
+      }
+    }
+  ]
+}
